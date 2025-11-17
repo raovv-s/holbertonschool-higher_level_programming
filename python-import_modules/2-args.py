@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 if __name__ == '__main__':
     import sys
-    if(len(sys.argv) = 0):
+    if(len(sys.argv) == 0):
         print(f"{len(sys.argv)} arguments.")
         break
     if(len(sys.argv) > 0):
