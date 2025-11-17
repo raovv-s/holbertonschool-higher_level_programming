@@ -5,7 +5,7 @@ if __name__ == '__main__':
         print(f"{len(sys.argv)} arguments.")
         sys.exit()
     if(len(sys.argv) > 0):
-        print(f"{len(sys.argv)} arguments.")
+        print(f"{len(sys.argv) - 1} arguments.")
     for i in range(1,len(sys.argv)):
         a = sys.argv[i]
         print(f"{i}: {a}")
