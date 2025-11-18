@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
     import hidden_4
 
     #  dir() returns a sorted list of all names in the module
