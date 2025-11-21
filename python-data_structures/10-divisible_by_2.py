@@ -5,6 +5,12 @@ def divisible_by_2(my_list=[]):
         return None
     for i in range(0,d):
         if my_list[i] % 2 != 0:
-            print(f"{my_list[i]} is not divided by 2")
+            print(f"{my_list[i]} is not divided by 2 ")
         else:
-            print(f"{my_list[i]} is divisible by 2")
+            print(f"{my_list[i]} is divisible by 2 ")
+"""
+1 is not divisible by 2
+2 is divisible by 2
+3 is not divisible by 2
+4 is divisible by 2
+"""
