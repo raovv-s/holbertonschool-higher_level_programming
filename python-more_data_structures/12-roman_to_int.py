@@ -9,4 +9,4 @@ def roman_to_int(roman_string):
     for i in range(0, len(roman_string)):
         d = roman_string[i]
         e = roman_dict.get(d)
-        return e
+        print(e)
