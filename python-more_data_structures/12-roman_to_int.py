@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
+    s = 0
     if not isinstance(roman_string, str):
         return None
     roman_dict = {
@@ -9,4 +10,5 @@ def roman_to_int(roman_string):
     for i in range(0, len(roman_string)):
         d = roman_string[i]
         e = roman_dict.get(d)
-        return e
+        s += e
+    return s
