@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
-    if not isinstance(roman_string, str) or not roman_string:
+    if not isinstance(roman_string, str):
         return None
     roman_dict = {
         "I": 1, "V": 5, "X": 10, "L": 50,
@@ -9,4 +9,4 @@ def roman_to_int(roman_string):
     for i in range(0, len(roman_string)):
         d = roman_string[i]
         e = roman_dict.get(d)
-        print("{} = {}".format(d, e))
+        return e
