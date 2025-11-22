@@ -10,4 +10,3 @@ def best_score(a_dictionary):
     mvalue = max(values)
     max_index = values.index(mvalue)
     return keys[max_index]
-    
