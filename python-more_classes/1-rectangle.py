@@ -1,4 +1,11 @@
 #!/usr/bin/python3
+"""
+Module 0-rectangle
+
+This module defines a Rectangle class.
+"""
+
+
 class Rectangle:
     """Rectangle class with private width attribute."""
 
