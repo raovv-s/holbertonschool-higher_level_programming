@@ -56,7 +56,7 @@ class Rectangle:
     
     def __str__(self):
         """
-        
+
         for loop which prints # 
         
         """
