@@ -1,4 +1,7 @@
 #!/usr/bin/python3
 class Rectangle:
-    """ Rectangle class with init"""
+    """
+    Module 0-rectangle
+    Rectangle class with init
+    """
     pass 
