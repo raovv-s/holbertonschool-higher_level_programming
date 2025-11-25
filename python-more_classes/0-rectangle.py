@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Clasess"""
+
+
 class Rectangle:
     """
     Module 0-rectangle
