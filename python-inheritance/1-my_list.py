@@ -2,7 +2,10 @@
 """ class Mylist with arg list """
 
 class Mylist(list):
-    """ function which sorts list's elements"""
+    """ function which sorts 
+    list's elements"""
 
     def print_sorted(self):
+        """ prints sorted list elements """
+
         print(sorted(self))
