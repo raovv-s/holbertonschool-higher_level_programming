@@ -1,7 +1,7 @@
 #!/usr/bin/python3 
 """ class Mylist with arg list """
 
-class Mylist(list):
+class MyList(list):
     """ function which sorts 
     list's elements"""
 
