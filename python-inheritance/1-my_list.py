@@ -3,10 +3,9 @@
 
 
 class MyList(list):
-    """ function which sorts
-    list's elements"""
+    """function which sortslist's elements"""
 
     def print_sorted(self):
-        """ prints sorted list elements """
+        """prints sorted list elements"""
 
         print(sorted(self))
