@@ -5,5 +5,4 @@
 def lookup(obj):
     """ return list of object """
 
-
     return dir(obj)
