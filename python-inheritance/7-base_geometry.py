@@ -11,7 +11,7 @@ class BaseGeometry:
     """method integer_validator, this method uses raises for validating"""
 
     def integer_validator(self, name, value):
-        if type(int) is not int:
+        if type(value) is not int:
             raise TypeError(f"{name} must be an integer")
         if value <= 0:
-            return ValueError(f"{name} must be greater than 0")
+            raise ValueError(f"{name} must be greater than 0")
