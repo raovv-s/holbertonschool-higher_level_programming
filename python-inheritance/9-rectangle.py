@@ -21,11 +21,8 @@ class Rectangle(BaseGeometry):
     """print method"""
 
     @property
-    def str(self, width, height):
+    def __str(self, width, height):
         return(f"[Rectangle] {__width}/{__height}")
     
     """print method"""
-    
-    @property
-    def print(self, width, height):
-        print(f"[Rectangle] {__width}/{__height}")
+
