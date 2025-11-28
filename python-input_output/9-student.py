@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Student Class with json function"""
 
+
 class Student:
     """Class Student with init and to_json function"""
 
