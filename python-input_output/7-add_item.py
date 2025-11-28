@@ -12,6 +12,6 @@ try:
 except FileNotFoundError:
     obj = []
 
-items.extend(argv[1:])
+obj.extend(argv[1:])
 
 save_to_json_file(obj, filename)
