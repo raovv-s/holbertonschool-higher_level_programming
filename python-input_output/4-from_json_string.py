@@ -6,5 +6,5 @@ import json
 def from_json_string(my_str):
     """from json function"""
 
-    sobj = json.load(my_str)
+    sobj = json.loads(my_str)
     return sobj
