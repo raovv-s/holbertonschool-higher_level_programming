@@ -1,2 +1,2 @@
 -- equal 
-SELECT score, COUNT(*) FROM second_table GROUP BY score HAVING COUNT(*) > 1;
+SELECT score, COUNT(*) FROM second_table GROUP BY score ORDER BY score DESC
