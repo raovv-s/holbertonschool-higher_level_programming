@@ -1,2 +1,2 @@
 -- select
-SELECT * FROM second_table
+SELECT * FROM second_table ORDER BY id DESC 
