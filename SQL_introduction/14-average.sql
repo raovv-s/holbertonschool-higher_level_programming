@@ -1,2 +1,2 @@
 -- AVG method is used 
-SELECT AVG(score) as score FROM second_table
+SELECT AVG(score) as average FROM second_table
