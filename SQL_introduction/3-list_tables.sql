@@ -1,2 +1,3 @@
+-- USE SHOW
 USE mysql
 SHOW TABLES;
