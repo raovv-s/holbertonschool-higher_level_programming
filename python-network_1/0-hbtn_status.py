@@ -1,5 +1,5 @@
 #!/usr/bin/python3
- """request read"""
+"""request read"""
 
 import urllib.request
 
