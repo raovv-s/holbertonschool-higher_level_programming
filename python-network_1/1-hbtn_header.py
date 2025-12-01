@@ -8,4 +8,4 @@ if __name__ == "__main__":
 
     with urllib.request.urlopen(url) as f:
         header = f.headers
-        print(headers.get("X-Request-Id"))
+        print(header.get("X-Request-Id"))
