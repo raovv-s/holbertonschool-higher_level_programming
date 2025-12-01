@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+"""urlib + sys"""
+import sys
+import urllib
+
+if __name__ = "__main__":
+    url = sys.argv[1]
+
+    with urllib.request.urlopen(url) as f:
+        header = f.headers()
+        print(headers.get("X-Request-Id"))
