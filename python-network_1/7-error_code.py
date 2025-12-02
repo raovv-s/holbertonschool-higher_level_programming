@@ -9,5 +9,5 @@ if __name__ == "__main__":
     StatusCode = req.status_code
     if StatusCode >= 400:
         print(f"Error code: {StatusCode}")
-    elif StatusCode < 400:
-        print("Reqular request")
+    elif:
+        print("Regular request")
