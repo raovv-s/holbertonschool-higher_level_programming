@@ -16,10 +16,10 @@ def fetch_and_print_posts():
         for post in posts:
             print(post["title"])
     else:
-        print("Ошибка запроса")
+        print("request error")
 
 def fetch_and_save_posts():
-    """Fetch posts and save them to a CSV file"""
+    """fetch and sace to csv """
     req = requests.get(URL)
     
     if req.status_code == 200:
