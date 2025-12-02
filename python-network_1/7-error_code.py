@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """request error"""
-import sys 
+import sys
 import requests
 
 if __name__ == "__main__":
