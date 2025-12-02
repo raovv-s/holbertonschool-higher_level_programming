@@ -2,7 +2,7 @@
 """sys + requests"""
 import sys
 import requests
-
-url = sys.argv[0]
-getr = requests.get(url)
-print(getr.header("X-Request-Id"))
+if __name __ == "__main__":
+    url = sys.argv[1]
+    getr = requests.get(url)
+    print(getr.header("X-Request-Id"))
