@@ -7,7 +7,7 @@ if __name__ == "__main__":
     q = sys.argv[1] if len(sys.argv) > 1 else ""
     parse = requests.post(url, data={"q": q})
     try:
-        r = data.json()
+        r = q.json()
     except ValueError:
         print("Not a valid JSON")    
     if not r:
