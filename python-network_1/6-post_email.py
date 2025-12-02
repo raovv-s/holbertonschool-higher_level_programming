@@ -9,4 +9,4 @@ if __name__ == "__main__":
     mail = sys.argv[2]
     data = {"email": mail}
     parse = getr.post(url, data=mail)
-    print parse.text
+    print(parse.text)
