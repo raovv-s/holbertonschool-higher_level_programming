@@ -8,15 +8,20 @@ req = requests.get(url)
 
 def fetch_and_print_posts(req):
     """post dump from JSONPlaceHolder"""
-
+    req = requests.get(url)
+    print(f"Status code: {req.status_code}")
     if req.status_code == 200:
         json = req.json()
-        print(json)
+        for post in posts:
+            print(post["title"])
     else:
         print("None")
 
 def fetch_and_save_posts(req):
+    req = requests.get(url)
+
     if req.status_code == 200:
+        json = req.json()
         key_data = []
     for key in json:
     key_data.append({
