@@ -13,7 +13,7 @@ if __name__ == "__main__":
     try:
         r = parse.json()
     except ValueError:
-        print("Not a valid JSON") 
+        print("Not a valid JSON")
     if not r:
         print("No result")
     else:
