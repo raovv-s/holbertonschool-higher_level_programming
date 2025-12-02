@@ -10,4 +10,4 @@ if __name__ == "__main__":
     if StatusCode >= 400:
         print(f"Error code: {StatusCode}")
     elif StatusCode < 400:
-        continue
+        pass
