@@ -23,12 +23,13 @@ def fetch_and_save_posts(req):
     if req.status_code == 200:
         json = req.json()
         keydata = []
-    for key in json:
-    keydata.append({
-    "id": post["id"],
-    "title": post["title"],
-    "body": post["body"]
-})
+        for key in json:
+            keydata.append({
+            "id": post["id"],
+            "title": post["title"],
+            "body": post["body"]
+                           })
+    
     with open("posts.csv", "w", encoding="utf-8") as f:
         writer = csv.DictWriter(file, fieldnames=["id", "title", "body"])
         writer.writeheader()
