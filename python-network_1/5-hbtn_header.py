@@ -5,4 +5,4 @@ import requests
 if __name__ == "__main__":
     url = sys.argv[1]
     getr = requests.get(url)
-    print(getr.headers("X-Request-Id"))
+    print(getr.headers)
