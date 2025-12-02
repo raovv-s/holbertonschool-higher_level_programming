@@ -15,6 +15,6 @@ if __name__ == "__main__":
     try:
         r = response.json()
     except ValueError:
-        return None
+        print("None")
     finally:
         id = r.get("id")
