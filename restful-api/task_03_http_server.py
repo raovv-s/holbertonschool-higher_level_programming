@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" http server with json"""
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
 
@@ -16,12 +17,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
 
         # JSON endpoint /data
         if self.path == "/data":
-            payload = {
-                "name": "John",
-                "age": 30,
-                "city": "New York"
-            }
-
+            payload = {"name": "John", "age": 30, "city": "New York"}
             self.send_response(200)
             self.send_header("Content-type", "application/json")
             self.end_headers()
@@ -36,19 +32,17 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
             self.wfile.write(b"OK")
             return
 
-        # Ошибка 404
+        # Ошибка 404 — строго "Not Found"
         self.send_response(404)
         self.send_header("Content-type", "text/plain")
         self.end_headers()
-        self.wfile.write(b"404 Not Found: endpoint does not exist")
-
+        self.wfile.write(b"Not Found")
 
 def run():
     server_address = ("0.0.0.0", 8000)
     httpd = HTTPServer(server_address, SimpleHTTPRequestHandler)
     print("Server running on port 8000...")
     httpd.serve_forever()
-
 
 if __name__ == "__main__":
     run()
