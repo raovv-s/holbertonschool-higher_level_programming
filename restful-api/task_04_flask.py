@@ -44,3 +44,5 @@ def add_user():
         "user": users[username]
     }), 200
 
+if __name__ == "__main__":
+    run()
