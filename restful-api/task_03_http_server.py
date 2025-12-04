@@ -36,7 +36,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         self.send_response(404)
         self.send_header("Content-type", "text/plain")
         self.end_headers()
-        self.wfile.write(b"Not Found")
+        self.wfile.write("Not Found".encode("utf-8"))
 
 def run():
     server_address = ("0.0.0.0", 8000)
