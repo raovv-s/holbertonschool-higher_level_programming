@@ -4,13 +4,16 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
+# In-memory database
+users = {}
+
 @app.route("/")
 def home():
-    print("Welcome to the Flask API!")
+    return "Welcome to the Flask API!"
 
 @app.route("/data")
 def data():
-    return jsonify(list(users.keys))
+    return jsonify(list(users.keys()))
 
 @app.route("/status")
 def status():
@@ -18,7 +21,7 @@ def status():
 
 @app.route("/users/<username>")
 def user_info(username):
-    user = user.get(username)
+    user = users.get(username)
     if user:
         return jsonify(user)
     else:
@@ -44,5 +47,6 @@ def add_user():
         "user": users[username]
     }), 200
 
+
 if __name__ == "__main__":
-    run()
+    app.run(host="0.0.0.0", port=5000)
